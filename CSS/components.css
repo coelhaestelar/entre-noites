@@ -1,89 +1,70 @@
 /* ==========================================
+   CHAPTER I
    BACKGROUND
 ========================================== */
 
 .background{
 
-    position: fixed;
+    position:fixed;
 
-    inset: 0;
+    inset:0;
 
     background:
         radial-gradient(
             ellipse at center,
             #262626 0%,
-            #202020 22%,
-            #1A1A1A 45%,
+            #202020 25%,
+            #1A1A1A 50%,
             #111111 100%
         );
 
-    z-index: -30;
+    z-index:var(--z-background);
 
 }
 
 
 /* ==========================================
+   CHAPTER II
    TOPOGRAPHY
 ========================================== */
 
 .topography{
 
-    position: fixed;
+    position:fixed;
 
-    width: 520px;
+    pointer-events:none;
 
-    height: auto;
+    opacity:.03;
 
-    background-repeat: no-repeat;
-
-    background-size: contain;
-
-    opacity: .025;
-
-    pointer-events: none;
-
-    z-index: -20;
+    z-index:var(--z-topography);
 
 }
 
 .topography-1{
 
-    width: 800px;
-    
-    left: -150px;
+    width:800px;
 
-    bottom: -15px;
+    left:-180px;
+
+    bottom:-40px;
 
 }
 
 .topography-2{
 
-    width: 600px;
+    width:600px;
 
-    right: -150px;
+    right:-150px;
 
-    top: -10px;
+    top:-30px;
 
-    transform: rotate(180deg);
+    transform:rotate(180deg);
 
-    opacity: .04;
-
-}
-
-.topography-3{
-    background-image: url("../assets/svg/topography3.svg");
-    right: 0;
-    bottom: 0;
-}
-
-.topography-4{
-    background-image: url("../assets/svg/topography4.svg");
-    right: 0;
-    top: 0;
 }
 
 
 /* ==========================================
+   CHAPTER III
    EDITORIAL FRAME
 ========================================== */
 
@@ -93,60 +74,87 @@
 
     inset:28px;
 
-    border: 1px solid rgba(255,255,255,.09);
+    border:1px solid var(--color-frame);
+
+    display:none;
 
     pointer-events:none;
 
-    z-index:100;
+    z-index:var(--z-frame);
 
 }
 
-.editorial-frame{
-    display: none;
-}
 
-/* ==========================
-   INTRO
-========================== */
+/* ==========================================
+   CHAPTER IV
+   SCENE
+========================================== */
 
-.intro{
+.scene{
 
     width:100vw;
+
     height:100vh;
 
     display:flex;
+
     justify-content:center;
+
     align-items:center;
 
 }
 
-/* ==========================
-   ENVELOPE
-========================== */
+
+/* ==========================================
+   CHAPTER V
+   THE ENVELOPE
+========================================== */
 
 .envelope{
 
-    position: relative;
+    position:relative;
 
-    width: min(650px, 85vw);
+    width:var(--envelope-width);
 
-    aspect-ratio: 1.56;
+    aspect-ratio:470 / 296;
 
-    filter: drop-shadow(var(--shadow-soft));
-
-    transition: transform .4s ease;
+    filter:drop-shadow(var(--shadow-soft));
 
 }
 
-.envelope:hover{
 
-    transform: translateY(-4px);
+/* ==========================================
+   CHAPTER VI
+   LETTER
+========================================== */
+
+.letter{
+
+    position:absolute;
+
+    left:50%;
+
+    top:8%;
+
+    width:var(--letter-width);
+
+    height:var(--letter-height);
+
+    transform:translateX(-50%);
+
+    background:var(--color-paper);
+
+    border-radius:4px;
+
+    z-index:var(--z-letter);
 
 }
 
-/* ==========================
+
+/* ==========================================
+   CHAPTER VII
    FLAP BOTTOM
-========================== */
+========================================== */
 
 .flap-bottom{
 
@@ -160,57 +168,37 @@
 
     object-fit:contain;
 
-    z-index:2;
+    z-index:var(--z-flap-bottom);
 
 }
 
-/* ==========================
+
+/* ==========================================
+   CHAPTER VIII
    BODY
-========================== */
+========================================== */
 
 .body{
 
-    position: absolute;
-
-    inset: 0;
-
-    width: 100%;
-
-    height: 100%;
-
-    object-fit: contain;
-
-}
-
-/* ==========================
-   LETTER
-========================== */
-
-.letter{
-
     position:absolute;
 
-    left:50%;
+    inset:0;
 
-    top:8%;
+    width:100%;
 
-    transform:translateX(-50%);
+    height:100%;
 
-    width:82%;
+    object-fit:contain;
 
-    height:86%;
-
-    background:#202020;
-
-    border-radius:4px;
-
-    z-index:-1;
+    z-index:var(--z-body);
 
 }
 
-/* ==========================
-   FLAP
-========================== */
+
+/* ==========================================
+   CHAPTER IX
+   FLAP TOP
+========================================== */
 
 .flap-top{
 
@@ -226,17 +214,15 @@
 
     pointer-events:none;
 
-    z-index:4;
-
-    transform-origin:top center;
-
-    transition:transform .9s cubic-bezier(.22,.61,.36,1);
+    z-index:var(--z-flap-top);
 
 }
 
-/* ==========================
+
+/* ==========================================
+   CHAPTER X
    SEAL
-========================== */
+========================================== */
 
 .seal{
 
@@ -250,35 +236,22 @@
 
     border:none;
 
+    padding:0;
+
     background:none;
 
     cursor:pointer;
 
-    z-index:20;
+    z-index:var(--z-seal);
 
 }
 
 .seal-image{
 
-    width:90px;
-
-    height:auto;
+    width:var(--seal-size);
 
     display:block;
 
-}
-
-
-.seal:hover img{
-
-    transform:scale(1.04);
-
-    filter:brightness(1.08);
-
-}
-
-.seal:active img{
-
-    transform:scale(.94);
+    filter:drop-shadow(var(--shadow-seal));
 
 }

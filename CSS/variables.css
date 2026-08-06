@@ -1,70 +1,91 @@
 /* ==========================================
-   ENTRE NOITES — DESIGN TOKENS
+   ENTRE NOITES
+   DESIGN TOKENS
 ========================================== */
-
-/* CORES */
-:root {
-
-    --color-background: #1E1E1E;
-    --color-black: #111111;
-
-    --color-surface: #1B1B1B;
-
-    --color-text: #F5F1ED;
-    --color-text-secondary: #B9B1AA;
-
-    --color-border: #3A3A3A;
-
-    --color-pink: #E8C9D2;
-
-}
-
-/* TIPOGRAFIA */
-
-:root {
-
-    --font-title: "Playfair Display", serif;
-    --font-body: "Montserrat", sans-serif;
-
-}
-
-/* ESPAÇAMENTOS */
-
-:root {
-
-    --space-xs: .5rem;
-    --space-sm: 1rem;
-    --space-md: 2rem;
-    --space-lg: 4rem;
-    --space-xl: 6rem;
-
-}
-
-/* BORDAS */
-
-:root {
-
-    --radius: .25rem;
-
-}
-
-/* ANIMAÇÕES */
-
-:root {
-
-    --transition-fast: .25s ease;
-
-    --transition-medium: .5s ease;
-
-    --transition-slow: 1s ease;
-
-}
-
-/* SOMBRAS */
 
 :root{
 
+    /* ===============================
+       COLORS
+    =============================== */
+
+    --color-background:#111111;
+
+    --color-surface:#1A1A1A;
+
+    --color-paper:#202020;
+
+    --color-frame:rgba(255,255,255,.08);
+
+    --color-text:#F5F5F5;
+
+
+    /* ===============================
+       TYPOGRAPHY
+    =============================== */
+
+    --font-body:"Montserrat", sans-serif;
+
+    --font-title:"Playfair Display", serif;
+
+
+    /* ===============================
+       ENVELOPE
+    =============================== */
+
+    --envelope-width:min(650px,85vw);
+
+    --seal-size:96px;
+
+    --letter-width:82%;
+
+    --letter-height:86%;
+
+
+    /* ===============================
+       SHADOWS
+    =============================== */
+
     --shadow-soft:
-        0 20px 50px rgba(0,0,0,.35);
+        0 28px 45px rgba(0,0,0,.45);
+
+    --shadow-seal:
+        0 10px 25px rgba(0,0,0,.35);
+
+
+    /* ===============================
+       ANIMATIONS
+    =============================== */
+
+    --speed-fast:.25s;
+
+    --speed-medium:.6s;
+
+    --speed-slow:1s;
+
+    --ease:cubic-bezier(.22,.61,.36,1);
+
+
+    /* ===============================
+       LAYERS
+    =============================== */
+
+    --z-background:-30;
+
+    --z-topography:-20;
+
+    --z-envelope:10;
+
+    --z-letter:11;
+
+    --z-flap-bottom:12;
+
+    --z-body:13;
+
+    --z-flap-top:14;
+
+    --z-seal:15;
+
+    --z-frame:100;
 
 }

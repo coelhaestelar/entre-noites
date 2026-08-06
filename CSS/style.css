@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap');
 
 /* ==========================================
+   CHAPTER I
    RESET
 ========================================== */
 
@@ -16,7 +17,16 @@ html{
 
 }
 
+/* ==========================================
+   CHAPTER II
+   DOCUMENT
+========================================== */
+
 body{
+
+    min-height:100vh;
+
+    overflow-x:hidden;
 
     background:var(--color-background);
 
@@ -24,11 +34,12 @@ body{
 
     font-family:var(--font-body);
 
-    min-height:100vh;
-
-    overflow-x:hidden;
-
 }
+
+/* ==========================================
+   CHAPTER III
+   MAIN
+========================================== */
 
 main{
 
@@ -39,5 +50,16 @@ main{
     justify-content:center;
 
     align-items:center;
+
+}
+
+/* ==========================================
+   CHAPTER IV
+   UTILITIES
+========================================== */
+
+.hidden{
+
+    display:none !important;
 
 }
