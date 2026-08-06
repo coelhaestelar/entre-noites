@@ -37,9 +37,9 @@
 
 }
 
-.envelope.opening .flap-container{
+.envelope.opening .flap-top{
 
-    transform:rotateX(180deg);
+    transform: rotateX(180deg);
 
 }
 
