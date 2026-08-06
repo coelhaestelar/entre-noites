@@ -1,0 +1,70 @@
+/* ==========================================
+   ENTRE NOITES — DESIGN TOKENS
+========================================== */
+
+/* CORES */
+:root {
+
+    --color-background: #1E1E1E;
+    --color-black: #111111;
+
+    --color-surface: #1B1B1B;
+
+    --color-text: #F5F1ED;
+    --color-text-secondary: #B9B1AA;
+
+    --color-border: #3A3A3A;
+
+    --color-pink: #E8C9D2;
+
+}
+
+/* TIPOGRAFIA */
+
+:root {
+
+    --font-title: "Playfair Display", serif;
+    --font-body: "Montserrat", sans-serif;
+
+}
+
+/* ESPAÇAMENTOS */
+
+:root {
+
+    --space-xs: .5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+    --space-xl: 6rem;
+
+}
+
+/* BORDAS */
+
+:root {
+
+    --radius: .25rem;
+
+}
+
+/* ANIMAÇÕES */
+
+:root {
+
+    --transition-fast: .25s ease;
+
+    --transition-medium: .5s ease;
+
+    --transition-slow: 1s ease;
+
+}
+
+/* SOMBRAS */
+
+:root{
+
+    --shadow-soft:
+        0 20px 50px rgba(0,0,0,.35);
+
+}
