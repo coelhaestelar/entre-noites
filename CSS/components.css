@@ -202,17 +202,21 @@
 
 .flap-top{
 
-    position:absolute;
-
-    inset:0;
-
     width:100%;
 
     height:100%;
 
     object-fit:contain;
 
-    pointer-events:none;
+    display:block;
+
+}
+
+.flap{
+
+    position:absolute;
+
+    inset:0;
 
     z-index:var(--z-flap-top);
 
