@@ -1,6 +1,27 @@
 /* ==========================================
    CHAPTER I
-   THE OPENING
+   THE SEAL
+========================================== */
+
+.seal{
+
+    transition:
+        transform .25s ease,
+        opacity .25s ease;
+
+}
+
+.envelope.open .seal{
+
+    transform:
+        translate(-50%, -50%)
+        scale(.92);
+
+}
+
+/* ==========================================
+   CHAPTER II
+   THE FLAP
 ========================================== */
 
 .flap{
@@ -8,12 +29,15 @@
     transform-origin:top center;
 
     transition:
-        transform var(--speed-slow) var(--ease);
+        transform var(--speed-slow)
+        var(--ease);
 
 }
 
 .envelope.open .flap{
 
     transform:rotateX(180deg);
+
+    transition-delay:.12s;
 
 }
