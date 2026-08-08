@@ -1,66 +1,19 @@
-@keyframes float{
+/* ==========================================
+   CHAPTER I
+   THE OPENING
+========================================== */
 
-    0%{
+.flap{
 
-        transform:
-        translateY(0);
+    transform-origin:top center;
 
-    }
-
-    50%{
-
-        transform:
-        translateY(-6px);
-
-    }
-
-    100%{
-
-        transform:
-        translateY(0);
-
-    }
+    transition:
+        transform var(--speed-slow) var(--ease);
 
 }
 
-.envelope{
+.envelope.open .flap{
 
-    animation:
-
-    float 6s ease-in-out infinite;
-
-}
-
-.envelope.opening .seal{
-
-    animation: sealPress .7s cubic-bezier(.22, .61, .36, 1) forwards;
-
-}
-
-.envelope.opening .flap-top{
-
-    transform: rotateX(180deg);
-
-}
-
-@keyframes sealPress{
-
-    0%{
-
-        transform: translate(-50%, -50%) scale(1);
-
-    }
-
-    35%{
-
-        transform: translate(-50%, -47%) scale(.93);
-
-    }
-
-    100%{
-
-        transform: translate(-50%, -50%) scale(1);
-
-    }
+    transform:rotateX(180deg);
 
 }

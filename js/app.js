@@ -1,13 +1,8 @@
-console.log("✨ Entre Noites iniciado.");
-
-
-const seal = document.querySelector(".seal");
 const envelope = document.querySelector(".envelope");
+const seal = document.querySelector(".seal");
 
 seal.addEventListener("click", () => {
 
-    if(envelope.classList.contains("opening")) return;
-
-    envelope.classList.add("opening");
+    envelope.classList.toggle("open");
 
 });

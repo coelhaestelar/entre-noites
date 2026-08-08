@@ -120,6 +120,8 @@
 
     filter:drop-shadow(var(--shadow-soft));
 
+    perspective:1800px;
+
 }
 
 
