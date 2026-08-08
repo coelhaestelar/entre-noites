@@ -34,6 +34,8 @@
 
     pointer-events:none;
 
+    user-select:none;
+
     opacity:.03;
 
     z-index:var(--z-topography);
@@ -76,9 +78,9 @@
 
     border:1px solid var(--color-frame);
 
-    display:none;
-
     pointer-events:none;
+
+    display:none;
 
     z-index:var(--z-frame);
 
@@ -94,13 +96,17 @@
 
     width:100vw;
 
-    height:100vh;
+    min-height:100vh;
 
     display:flex;
 
     justify-content:center;
 
     align-items:center;
+
+    position:relative;
+
+    /* z-index:var(--z-letter); */
 
 }
 
@@ -122,15 +128,18 @@
 
     perspective:1800px;
 
-}
+    isolation:isolate;
 
+}
 
 /* ==========================================
    CHAPTER VI
-   LETTER
+   THE LETTER
 ========================================== */
 
 .letter{
+
+    box-sizing:border-box;
 
     position:absolute;
 
@@ -144,9 +153,11 @@
 
     transform:translateX(-50%);
 
-    background:var(--color-paper);
+    background:red;
 
     border-radius:4px;
+
+    overflow:hidden;
 
     z-index:var(--z-letter);
 
@@ -160,13 +171,12 @@
 
 }
 
-
 /* ==========================================
    CHAPTER VII
-   FLAP BOTTOM
+   ENVELOPE BODY
 ========================================== */
 
-.flap-bottom{
+.envelope-body{
 
     position:absolute;
 
@@ -178,37 +188,27 @@
 
     object-fit:contain;
 
-    z-index:var(--z-flap-bottom);
-
-}
-
-
-/* ==========================================
-   CHAPTER VIII
-   BODY
-========================================== */
-
-.body{
-
-    position:absolute;
-
-    inset:0;
-
-    width:100%;
-
-    height:100%;
-
-    object-fit:contain;
-
-    z-index:var(--z-body);
+    z-index:var(--z-envelope-body);
 
 }
 
 
 /* ==========================================
    CHAPTER IX
-   FLAP TOP
+   FLAP
 ========================================== */
+
+.flap{
+
+    position:absolute;
+
+    inset:0;
+
+    transform-origin:top center;
+
+    z-index:var(--z-flap-top);
+
+}
 
 .flap-top{
 
@@ -219,16 +219,6 @@
     object-fit:contain;
 
     display:block;
-
-}
-
-.flap{
-
-    position:absolute;
-
-    inset:0;
-
-    z-index:var(--z-flap-top);
 
 }
 
@@ -250,9 +240,9 @@
 
     border:none;
 
-    padding:0;
-
     background:none;
+
+    padding:0;
 
     cursor:pointer;
 

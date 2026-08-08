@@ -76,15 +76,13 @@
 
     --z-envelope:10;
 
-    --z-letter:11;
+    --z-letter:10;
 
-    --z-flap-bottom:12;
-
-    --z-body:13;
-
-    --z-flap-top:14;
-
-    --z-seal:15;
+    --z-envelope-body:11;
+      
+    --z-flap-top:12;
+   
+    --z-seal:13;
 
     --z-frame:100;
 
