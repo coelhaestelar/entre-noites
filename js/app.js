@@ -217,3 +217,68 @@ invitation.addEventListener("wheel", (event) => {
     }
 
 }, { passive:true });
+
+
+const countdownDays = document.querySelector('[data-unit="days"]');
+const countdownHours = document.querySelector('[data-unit="hours"]');
+const countdownMinutes = document.querySelector('[data-unit="minutes"]');
+const countdownSeconds = document.querySelector('[data-unit="seconds"]');
+
+
+/* ==========================================
+   COUNTDOWN
+========================================== */
+
+const weddingDate = new Date("2026-10-30T21:00:00-03:00");
+
+function updateCountdown(){
+
+    const now = new Date();
+
+    const difference =
+        weddingDate.getTime() - now.getTime();
+
+    if (difference <= 0){
+
+        countdownDays.textContent = "00";
+        countdownHours.textContent = "00";
+        countdownMinutes.textContent = "00";
+        countdownSeconds.textContent = "00";
+
+        return;
+
+    }
+
+    const totalSeconds =
+        Math.floor(difference / 1000);
+
+    const days =
+        Math.floor(totalSeconds / 86400);
+
+    const hours =
+        Math.floor((totalSeconds % 86400) / 3600);
+
+    const minutes =
+        Math.floor((totalSeconds % 3600) / 60);
+
+    const seconds =
+        totalSeconds % 60;
+
+
+    countdownDays.textContent =
+        String(days).padStart(2, "0");
+
+    countdownHours.textContent =
+        String(hours).padStart(2, "0");
+
+    countdownMinutes.textContent =
+        String(minutes).padStart(2, "0");
+
+    countdownSeconds.textContent =
+        String(seconds).padStart(2, "0");
+
+}
+
+updateCountdown();
+
+setInterval(updateCountdown, 1000);

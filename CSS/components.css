@@ -610,3 +610,123 @@
     opacity:0;
 
 }
+
+/* ==========================================
+   COUNTDOWN
+========================================== */
+
+.countdown{
+
+    width:100%;
+
+    margin-top:52px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.countdown-days{
+
+    display:flex;
+
+    align-items:baseline;
+
+    gap:7px;
+
+}
+
+.countdown-days .countdown-value{
+
+    font-family:var(--font-body);
+
+    font-size:30px;
+
+    font-weight:500;
+
+    letter-spacing:.04em;
+
+    color:#bca6ad;
+
+}
+
+.countdown-days .countdown-label{
+
+    font-family:var(--font-body);
+
+    font-size:9px;
+
+    font-weight:400;
+
+    letter-spacing:.18em;
+
+    color:#d8d2cf;
+
+}
+
+.countdown-time{
+
+    display:flex;
+
+    align-items:baseline;
+
+    justify-content:center;
+
+    gap:10px;
+
+    white-space:nowrap;
+
+}
+
+.countdown-unit{
+
+    display:flex;
+
+    align-items:baseline;
+
+    gap:4px;
+
+}
+
+.countdown-time .countdown-value{
+
+    font-family:var(--font-body);
+
+    font-size:16px;
+
+    font-weight:500;
+
+    letter-spacing:.04em;
+
+    color:#bca6ad;
+
+}
+
+.countdown-time .countdown-label{
+
+    font-family:var(--font-body);
+
+    font-size:7px;
+
+    font-weight:400;
+
+    letter-spacing:.14em;
+
+    color:#d8d2cf;
+
+}
+
+.countdown-separator{
+
+    font-family:var(--font-title);
+
+    font-size:14px;
+
+    color:rgba(216, 210, 207, .45);
+
+}
