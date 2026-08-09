@@ -99,21 +99,7 @@ function smoothScrollTo(element, target, duration){
          * enquanto estamos chegando nela.
          */
 
-        if (
-            progress >= 0.55 &&
-            !document
-                .querySelector(".chapter-night")
-                .classList
-                .contains("is-visible")
-        ){
-
-            document
-                .querySelector(".chapter-night")
-                .classList
-                .add("is-visible");
-
-        }
-
+              
         if (progress >= 0.35){
 
             document
@@ -156,6 +142,38 @@ function disableAutomaticNavigation(){
     clearTimeout(autoTimer);
 
 }
+
+/* ==========================================
+   CHAPTER VISIBILITY
+========================================== */
+
+const chapters = document.querySelectorAll(".chapter");
+
+const chapterObserver = new IntersectionObserver(
+    (entries) => {
+
+        entries.forEach((entry) => {
+
+            if (entry.isIntersecting){
+
+                entry.target.classList.add("is-visible");
+
+            }
+
+        });
+
+    },
+    {
+        root: invitation,
+        threshold:0.5
+    }
+);
+
+chapters.forEach((chapter) => {
+
+    chapterObserver.observe(chapter);
+
+});
 
 
 /* ==========================================
