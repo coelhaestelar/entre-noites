@@ -139,25 +139,27 @@
 
 .letter{
 
-    box-sizing:border-box;
-
     position:absolute;
 
     left:50%;
 
     top:8%;
 
-    width:var(--letter-width);
+    width:82%;
 
-    height:var(--letter-height);
+    height:86%;
 
-    transform:translateX(-50%);
+    transform:
+        translateX(-50%)
+        translateY(40px);
 
-    background:red;
+    background:#111111;
 
     border-radius:4px;
 
     overflow:hidden;
+
+    opacity:0;
 
     z-index:var(--z-letter);
 
@@ -257,5 +259,39 @@
     display:block;
 
     filter:drop-shadow(var(--shadow-seal));
+
+}
+
+/* ==========================================
+   OPENING TRANSITION
+========================================== */
+
+.envelope-body{
+
+    transition:
+        opacity .25s ease;
+
+}
+
+.flap{
+
+    transition:
+        transform .9s var(--ease),
+        opacity .15s ease;
+
+}
+
+.seal{
+
+    transition:
+        transform .25s ease,
+        opacity .2s ease;
+
+}
+
+.seal:focus,
+.seal:focus-visible{
+
+    outline:none;
 
 }
