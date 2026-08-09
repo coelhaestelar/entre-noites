@@ -879,3 +879,161 @@
     color:#f1ece8;
 
 }
+
+.event-location-coordinates{
+
+    margin-top:14px;
+
+    font-family:var(--font-body);
+
+    font-size:8px;
+
+    font-weight:400;
+
+    letter-spacing:.18em;
+
+    color:rgba(216, 210, 207, .5);
+
+}
+
+
+/* ==========================================
+   CHAPTER VIII
+   THE PLACE
+========================================== */
+
+.chapter-place{
+
+    background:#111111;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    box-sizing:border-box;
+
+    padding:8%;
+
+}
+
+.place-content{
+
+    width:100%;
+
+    max-width:720px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.place-eyebrow{
+
+    font-family:var(--font-body);
+
+    font-size:9px;
+
+    font-weight:400;
+
+    letter-spacing:.28em;
+
+    color:#d8d2cf;
+
+}
+
+.place-map{
+
+    position:relative;
+
+    width:100%;
+
+    height:48vh;
+
+    margin-top:32px;
+
+    box-sizing:border-box;
+
+    overflow:hidden;
+
+    background:#111111;
+
+}
+
+.place-map-image{
+
+    width:100%;
+
+    height:100%;
+
+    display:block;
+
+    object-fit:cover;
+
+    object-position:center;
+
+}
+
+.place-info{
+
+    margin-top:28px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.place-name{
+
+    font-family:var(--font-title);
+
+    font-size:25px;
+
+    font-weight:400;
+
+    color:#f1ece8;
+
+}
+
+.place-address{
+
+    margin-top:8px;
+
+    font-family:var(--font-body);
+
+    font-size:10px;
+
+    font-weight:400;
+
+    letter-spacing:.18em;
+
+    color:#d8d2cf;
+
+}
+
+.place-map-link{
+
+    margin-top:28px;
+
+    font-family:var(--font-body);
+
+    font-size:8px;
+
+    font-weight:400;
+
+    letter-spacing:.22em;
+
+    color:#bca6ad;
+
+    text-decoration:none;
+
+}
