@@ -546,3 +546,42 @@
     color:#f1ece8;
 
 }
+
+/* ==========================================
+   CHAPTER VI — ENTRANCE
+========================================== */
+
+.chapter-night .night-content{
+
+    opacity:0;
+
+    transform:translateY(10px);
+
+    transition:
+        opacity 1.8s ease,
+        transform 2s cubic-bezier(.16, 1, .3, 1);
+
+}
+
+.chapter-night.is-visible .night-content{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+    transition-delay:.35s;
+
+}
+
+.chapter-hero{
+
+    transition:
+        opacity 1.2s ease;
+
+}
+
+.chapter-hero.is-leaving{
+
+    opacity:0;
+
+}

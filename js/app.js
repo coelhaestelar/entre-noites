@@ -1,8 +1,201 @@
 const envelope = document.querySelector(".envelope");
 const seal = document.querySelector(".seal");
+const invitation = document.querySelector(".invitation");
+const nightChapter = 
+    document.querySelector(".chapter-night");
+
+let automaticNavigation = true;
+let autoTimer = null;
+
+const AUTO_DELAY = 5000; // 5 seconds
+
+
+/* ==========================================
+   ENVELOPE
+========================================== */
 
 seal.addEventListener("click", () => {
 
-    envelope.classList.toggle("open");
+    envelope.classList.add("open");
+
+    startAutomaticNavigation();
 
 });
+
+
+/* ==========================================
+   AUTOMATIC NAVIGATION
+========================================== */
+
+function startAutomaticNavigation(){
+
+    clearTimeout(autoTimer);
+
+    autoTimer = setTimeout(() => {
+
+        if (!automaticNavigation) return;
+
+        const nextChapter =
+            document.querySelector(".chapter-night");
+
+        if (!nextChapter) return;
+
+        smoothScrollTo(
+            invitation,
+            nextChapter.offsetTop,
+            2200
+        );
+
+    }, AUTO_DELAY);
+
+}
+
+function smoothScrollTo(element, target, duration){
+
+    const start = element.scrollTop;
+    const distance = target - start;
+    const startTime = performance.now();
+
+    const previousSnap = element.style.scrollSnapType;
+    const previousBehavior = element.style.scrollBehavior;
+
+    // O JS assume o controle total da transição
+    element.style.scrollSnapType = "none";
+    element.style.scrollBehavior = "auto";
+
+    function animate(currentTime){
+
+        if (!automaticNavigation){
+
+            element.style.scrollSnapType = previousSnap;
+            element.style.scrollBehavior = previousBehavior;
+
+            return;
+
+        }
+
+        const elapsed = currentTime - startTime;
+
+        const progress =
+            Math.min(elapsed / duration, 1);
+
+        /*
+         * Movimento suave:
+         * começa devagar,
+         * ganha velocidade,
+         * desacelera no final.
+         */
+
+        const eased =
+            progress < 0.5
+                ? 2 * progress * progress
+                : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+
+        element.scrollTop =
+            start + distance * eased;
+
+        /*
+         * A próxima tela começa a nascer
+         * enquanto estamos chegando nela.
+         */
+
+        if (
+            progress >= 0.55 &&
+            !document
+                .querySelector(".chapter-night")
+                .classList
+                .contains("is-visible")
+        ){
+
+            document
+                .querySelector(".chapter-night")
+                .classList
+                .add("is-visible");
+
+        }
+
+        if (progress >= 0.35){
+
+            document
+                .querySelector(".chapter-hero")
+                .classList
+                .add("is-leaving");
+
+        }
+
+        if (progress < 1){
+
+            requestAnimationFrame(animate);
+
+        } else {
+
+            element.scrollTop = target;
+
+            element.style.scrollSnapType = previousSnap;
+            element.style.scrollBehavior = previousBehavior;
+
+        }
+
+    }
+
+    requestAnimationFrame(animate);
+
+}
+
+
+/* ==========================================
+   MANUAL NAVIGATION
+========================================== */
+
+function disableAutomaticNavigation(){
+
+    if (!automaticNavigation) return;
+
+    automaticNavigation = false;
+
+    clearTimeout(autoTimer);
+
+}
+
+
+/* ==========================================
+   TOUCH / SWIPE
+========================================== */
+
+let touchStartY = 0;
+
+invitation.addEventListener("touchstart", (event) => {
+
+    touchStartY = event.touches[0].clientY;
+
+}, { passive:true });
+
+
+invitation.addEventListener("touchend", (event) => {
+
+    const touchEndY = event.changedTouches[0].clientY;
+
+    const distance = Math.abs(touchEndY - touchStartY);
+
+    if (distance > 20){
+
+        disableAutomaticNavigation();
+
+    }
+
+}, { passive:true });
+
+
+/* ==========================================
+   MOUSE / TRACKPAD
+========================================== */
+
+invitation.addEventListener("wheel", (event) => {
+
+    if (Math.abs(event.deltaY) > 10){
+
+        disableAutomaticNavigation();
+
+    }
+
+}, { passive:true });
