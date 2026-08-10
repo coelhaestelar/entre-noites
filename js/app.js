@@ -282,3 +282,83 @@ function updateCountdown(){
 updateCountdown();
 
 setInterval(updateCountdown, 1000);
+
+
+const pixModal = document.getElementById("pixModal");
+const openPixModal = document.getElementById("openPixModal");
+const pixCopyButton = document.getElementById("pixCopyButton");
+const pixCopyText = document.getElementById("pixCopyText");
+const pixKey = document.getElementById("pixKey");
+
+const pixCloseButtons = document.querySelectorAll("[data-pix-close]");
+
+
+function openPix(){
+
+    pixModal.classList.add("is-open");
+
+    pixModal.setAttribute("aria-hidden", "false");
+
+    document.body.style.overflow = "hidden";
+
+}
+
+
+function closePix(){
+
+    pixModal.classList.remove("is-open");
+
+    pixModal.setAttribute("aria-hidden", "true");
+
+    document.body.style.overflow = "";
+
+}
+
+
+openPixModal.addEventListener("click", openPix);
+
+
+pixCloseButtons.forEach((button) => {
+
+    button.addEventListener("click", closePix);
+
+});
+
+
+document.addEventListener("keydown", (event) => {
+
+    if(
+        event.key === "Escape" &&
+        pixModal.classList.contains("is-open")
+    ){
+
+        closePix();
+
+    }
+
+});
+
+
+pixCopyButton.addEventListener("click", async () => {
+
+    const key = pixKey.textContent.trim();
+
+    try{
+
+        await navigator.clipboard.writeText(key);
+
+        pixCopyText.textContent = "CHAVE COPIADA";
+
+        setTimeout(() => {
+
+            pixCopyText.textContent = "COPIAR CHAVE";
+
+        }, 2200);
+
+    }catch(error){
+
+        pixCopyText.textContent = "COPIE MANUALMENTE";
+
+    }
+
+});

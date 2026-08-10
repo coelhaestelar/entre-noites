@@ -2332,3 +2332,1286 @@
     color:#bca6ad;
 
 }
+
+
+/* ==========================================
+   CHAPTER XI
+   THE GIFTS
+========================================== */
+
+.chapter-gifts{
+
+    background:#111111;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    box-sizing:border-box;
+
+    padding:0 8%;
+
+}
+
+
+.gifts-content{
+
+    position:relative;
+
+    width:100%;
+
+    max-width:520px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    transform:translateY(-3vh);
+
+}
+
+/* ==========================================
+   GIFTS — TITLE ORNAMENT
+========================================== */
+
+.gifts-top-divider{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    width:105px;
+
+    margin-top:24px;
+
+}
+
+.gifts-top-divider span{
+
+    width:34px;
+
+    height:1px;
+
+    background:rgba(188,166,173,.5);
+
+}
+
+.gifts-top-divider i{
+
+    width:6px;
+
+    height:6px;
+
+    flex:none;
+
+    background:#bca6ad;
+
+    transform:rotate(45deg);
+
+}
+
+
+/* ==========================================
+   GIFTS — OPTIONS
+========================================== */
+
+.gifts-option{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+
+/* ==========================================
+   GIFTS — ICONS
+========================================== */
+
+.gifts-icon-wrap{
+
+    width:72px;
+    height:72px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    margin-top:42px;
+
+}
+
+.gifts-icon-image {
+    width: 72px;
+    height: 72px;
+    display: block;
+    object-fit: contain;
+}
+
+
+/* ==========================================
+   GIFTS — OPTION TITLE
+========================================== */
+
+.gifts-option-title{
+
+    margin-top:14px;
+
+    font-family:var(--font-body);
+
+    font-size:11px;
+
+    font-weight:400;
+
+    letter-spacing:.12em;
+
+    color:#d8d2cf;
+
+}
+
+
+/* ==========================================
+   GIFTS — BUTTONS
+========================================== */
+
+.gifts-option .gifts-button{
+
+    margin-top:20px;
+
+}
+
+
+/* ==========================================
+   GIFTS — OR
+========================================== */
+
+.gifts-or{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    width:120px;
+
+    margin-top:58px;
+
+    margin-bottom:18px;
+
+}
+
+
+.gifts-or span{
+
+    width:30px;
+
+    height:1px;
+
+    background:rgba(188,166,173,.45);
+
+}
+
+
+.gifts-or i{
+
+    font-family:var(--font-title);
+
+    font-size:14px;
+
+    font-style:italic;
+
+    letter-spacing:.04em;
+
+    color:#bca6ad;
+
+}
+
+
+/* ==========================================
+   GIFTS — PIX
+========================================== */
+
+.gifts-option--pix .gifts-icon-wrap{
+
+    margin-top:5px;
+
+}
+
+
+.gifts-option--pix .gifts-option-title{
+
+    text-transform:none;
+
+}
+
+
+.gifts-option--pix .gifts-button{
+
+    margin-top:18px;
+
+}
+
+
+/* ==========================================
+   GIFTS — FINAL DIVIDER
+========================================== */
+
+.gifts-divider{
+
+    width:105px;
+
+    height:1px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    margin-top:70px;
+
+    opacity:.75;
+
+}
+
+
+.gifts-divider span{
+
+    display:block;
+
+    width:42px;
+
+    height:1px;
+
+    background:rgba(188,166,173,.5);
+
+}
+
+
+.gifts-divider i{
+
+    display:block;
+
+    flex:none;
+
+    width:5px;
+
+    height:5px;
+
+    background:#bca6ad;
+
+    transform:rotate(45deg);
+
+}/* ==========================================
+   GIFTS — TITLE ORNAMENT
+========================================== */
+
+.gifts-top-divider{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    width:105px;
+
+    margin-top:24px;
+
+}
+
+.gifts-top-divider span{
+
+    width:34px;
+
+    height:1px;
+
+    background:rgba(188,166,173,.5);
+
+}
+
+.gifts-top-divider i{
+
+    width:6px;
+
+    height:6px;
+
+    flex:none;
+
+    background:#bca6ad;
+
+    transform:rotate(45deg);
+
+}
+
+
+/* ==========================================
+   GIFTS — OPTIONS
+========================================== */
+
+.gifts-option{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+
+/* ==========================================
+   GIFTS — ICONS
+========================================== */
+
+.gifts-icon-wrap{
+
+    width:58px;
+
+    height:58px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-top:42px;
+
+}
+
+
+.gifts-icon{
+
+    width:48px;
+
+    height:48px;
+
+    fill:none;
+
+    stroke:#c9b3ba;
+
+    stroke-width:1.15;
+
+    stroke-linecap:round;
+
+    stroke-linejoin:round;
+
+}
+
+
+/* ==========================================
+   GIFTS — OPTION TITLE
+========================================== */
+
+.gifts-option-title{
+
+    margin-top:14px;
+
+    font-family:var(--font-body);
+
+    font-size:11px;
+
+    font-weight:400;
+
+    letter-spacing:.12em;
+
+    color:#d8d2cf;
+
+}
+
+
+/* ==========================================
+   GIFTS — BUTTONS
+========================================== */
+
+.gifts-option .gifts-button{
+
+    margin-top:20px;
+
+}
+
+
+/* ==========================================
+   GIFTS — OR
+========================================== */
+
+.gifts-or{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    width:120px;
+
+    margin-top:42px;
+
+}
+
+
+.gifts-or span{
+
+    width:30px;
+
+    height:1px;
+
+    background:rgba(188,166,173,.45);
+
+}
+
+
+.gifts-or i{
+
+    font-family:var(--font-title);
+
+    font-size:14px;
+
+    font-style:italic;
+
+    letter-spacing:.04em;
+
+    color:#bca6ad;
+
+}
+
+
+/* ==========================================
+   GIFTS — PIX
+========================================== */
+
+.gifts-option--pix .gifts-icon-wrap{
+
+    margin-top:34px;
+
+}
+
+
+.gifts-option--pix .gifts-option-title{
+
+    text-transform:none;
+
+}
+
+
+.gifts-option--pix .gifts-button{
+
+    margin-top:18px;
+
+}
+
+
+/* ==========================================
+   GIFTS — FINAL DIVIDER
+========================================== */
+
+.gifts-divider{
+
+    width:105px;
+
+    height:1px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    margin-top:70px;
+
+    opacity:.75;
+
+}
+
+
+.gifts-divider span{
+
+    display:block;
+
+    width:42px;
+
+    height:1px;
+
+    background:rgba(188,166,173,.5);
+
+}
+
+
+.gifts-divider i{
+
+    display:block;
+
+    flex:none;
+
+    width:5px;
+
+    height:5px;
+
+    background:#bca6ad;
+
+    transform:rotate(45deg);
+
+}
+
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.gifts-title{
+
+    margin:0;
+
+    font-family:var(--font-title);
+
+    font-size:clamp(30px, 7vw, 46px);
+
+    font-weight:400;
+
+    line-height:1;
+
+    letter-spacing:.01em;
+
+    color:#f1ece8;
+
+}
+
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.gifts-button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    margin-top:44px;
+
+    padding:13px 22px;
+
+    border:1px solid rgba(188,166,173,.6);
+
+    font-family:var(--font-body);
+
+    font-size:10px;
+
+    font-weight:500;
+
+    letter-spacing:.18em;
+
+    text-decoration:none;
+
+    color:#d8d2cf;
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        border-color .3s ease;
+
+}
+
+.gifts-button span{
+
+    font-size:7px;
+
+    color:#bca6ad;
+
+}
+
+.gifts-button:hover{
+
+    background:rgba(188,166,173,.08);
+
+    border-color:#bca6ad;
+
+    color:#f1ece8;
+
+}
+
+
+/* ==========================================
+   OR
+========================================== */
+
+.gifts-or{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    width:120px;
+
+    margin-top:38px;
+
+}
+
+.gifts-or span{
+
+    width:28px;
+
+    height:1px;
+
+    background:rgba(188,166,173,.35);
+
+}
+
+.gifts-or i{
+
+    font-family:var(--font-body);
+
+    font-size:15px;
+
+    font-style:normal;
+
+    letter-spacing:.08em;
+
+    color:#8f8987;
+
+}
+
+
+/* ==========================================
+   PIX
+========================================== */
+
+.gifts-pix-label{
+
+    margin-top:15px;
+
+    font-family:var(--font-body);
+
+    font-size:13px;
+
+    font-weight:400;
+
+    letter-spacing:.08em;
+
+    color:#d8d2cf;
+
+}
+
+.gifts-button--pix{
+
+    margin-top:8px;
+
+}
+
+
+/* ==========================================
+   DIVIDER
+========================================== */
+
+.gifts-divider{
+
+    width:105px;
+
+    height:1px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    margin-top:72px;
+
+    opacity:.75;
+
+}
+
+.gifts-divider span{
+
+    display:block;
+
+    width:42px;
+
+    height:1px;
+
+    background:rgba(188,166,173,.5);
+
+}
+
+.gifts-divider i{
+
+    display:block;
+
+    flex:none;
+
+    width:5px;
+
+    height:5px;
+
+    background:#bca6ad;
+
+    transform:rotate(45deg);
+
+}
+
+
+/* ==========================================
+   GIFT OPTIONS
+========================================== */
+
+.gifts-option{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.gifts-icon{
+
+    width:28px;
+
+    height:28px;
+
+    fill:none;
+
+    stroke:#bca6ad;
+
+    stroke-width:1.15;
+
+    stroke-linecap:round;
+
+    stroke-linejoin:round;
+
+}
+
+
+.gifts-option-title{
+
+    margin-top:50px;
+
+    font-family:var(--font-body);
+
+    font-size:11px;
+
+    font-weight:400;
+
+    letter-spacing:.08em;
+
+    color:#d8d2cf;
+
+}
+
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.gifts-option .gifts-button{
+
+    margin-top:52px;
+
+}
+
+
+/* ==========================================
+   SPACING
+========================================== */
+
+.gifts-or{
+
+    margin-top:20px;
+
+    margin-bottom:40px;
+
+}
+
+/* ==========================================
+   GIFTS — FINAL OVERRIDES
+========================================== */
+
+.chapter-gifts .gifts-icon-wrap {
+    width: 82px;
+    height: 82px;
+    margin-top: 52px;
+}
+
+.chapter-gifts .gifts-icon {
+    width: 82px !important;
+    height: 82px !important;
+}
+
+
+/* espaço entre a primeira opção e o "ou" */
+.chapter-gifts .gifts-or {
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+
+/* aproxima o PIX do "ou" */
+.chapter-gifts .gifts-option--pix .gifts-icon-wrap {
+    margin-top: 15px;
+}
+
+
+/* ==========================================
+   GIFTS — SPACING RESET
+========================================== */
+
+.chapter-gifts .gifts-content {
+    transform: translateY(-3vh);
+}
+
+
+/* título → ornamento */
+
+.chapter-gifts .gifts-top-divider {
+    margin-top: 24px;
+}
+
+
+/* ==========================================
+   PRIMEIRA OPÇÃO
+========================================== */
+
+.chapter-gifts .gifts-option--list .gifts-icon-wrap {
+    width: 72px;
+    height: 72px;
+    margin-top: 28px;
+}
+
+
+.chapter-gifts .gifts-option--list .gifts-icon-image {
+    width: 64px;
+    height: 64px;
+}
+
+
+.chapter-gifts .gifts-option--list .gifts-option-title {
+    margin-top: 12px;
+}
+
+
+.chapter-gifts .gifts-option--list .gifts-button {
+    margin-top: 18px;
+}
+
+
+/* ==========================================
+   OU
+========================================== */
+
+.chapter-gifts .gifts-or {
+    margin-top: 46px;
+    margin-bottom: 0;
+}
+
+
+/* ==========================================
+   SEGUNDA OPÇÃO — PIX
+========================================== */
+
+.chapter-gifts .gifts-option--pix .gifts-icon-wrap {
+    width: 72px;
+    height: 72px;
+    margin-top: 28px;
+}
+
+
+.chapter-gifts .gifts-option--pix .gifts-icon-image {
+    width: 64px;
+    height: 64px;
+}
+
+
+.chapter-gifts .gifts-option--pix .gifts-option-title {
+    margin-top: 12px;
+}
+
+
+.chapter-gifts .gifts-option--pix .gifts-button {
+    margin-top: 18px;
+}
+
+
+/* ==========================================
+   DIVISOR FINAL
+========================================== */
+
+.chapter-gifts .gifts-divider {
+    margin-top: 64px;
+}
+
+
+/* ==========================================
+   PIX MODAL
+========================================== */
+
+.pix-modal{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:1000;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:24px;
+
+    box-sizing:border-box;
+
+    visibility:hidden;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:
+        opacity .3s ease,
+        visibility .3s ease;
+
+}
+
+
+.pix-modal.is-open{
+
+    visibility:visible;
+
+    opacity:1;
+
+    pointer-events:auto;
+
+}
+
+
+/* ==========================================
+   OVERLAY
+========================================== */
+
+.pix-modal-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(10,10,10,.82);
+
+    backdrop-filter:blur(4px);
+
+}
+
+
+/* ==========================================
+   CARD
+========================================== */
+
+.pix-modal-card{
+
+    position:relative;
+
+    z-index:1;
+
+    width:100%;
+
+    max-width:360px;
+
+    box-sizing:border-box;
+
+    padding:42px 30px 34px;
+
+    border:1px solid rgba(188,166,173,.6);
+
+    background:#111111;
+
+    text-align:center;
+
+    transform:translateY(12px);
+
+    transition:transform .3s ease;
+
+}
+
+
+.pix-modal.is-open .pix-modal-card{
+
+    transform:translateY(0);
+
+}
+
+
+/* ==========================================
+   CLOSE
+========================================== */
+
+.pix-modal-close{
+
+    position:absolute;
+
+    top:12px;
+
+    right:14px;
+
+    width:28px;
+
+    height:28px;
+
+    padding:0;
+
+    border:0;
+
+    background:transparent;
+
+    font-family:var(--font-body);
+
+    font-size:20px;
+
+    font-weight:300;
+
+    line-height:1;
+
+    color:#bca6ad;
+
+    cursor:pointer;
+
+}
+
+
+/* ==========================================
+   TEXT
+========================================== */
+
+.pix-modal-eyebrow{
+
+    display:block;
+
+    font-family:var(--font-body);
+
+    font-size:9px;
+
+    letter-spacing:.22em;
+
+    color:#bca6ad;
+
+}
+
+
+.pix-modal-title{
+
+    margin:14px 0 24px;
+
+    font-family:var(--font-title);
+
+    font-size:28px;
+
+    font-weight:400;
+
+    line-height:1;
+
+    color:#f1ece8;
+
+}
+
+
+/* ==========================================
+   PIX KEY
+========================================== */
+
+.pix-key-box{
+
+    width:100%;
+
+    box-sizing:border-box;
+
+    padding:14px 12px;
+
+    border:1px solid rgba(188,166,173,.35);
+
+    background:rgba(188,166,173,.035);
+
+}
+
+
+.pix-key{
+
+    display:block;
+
+    overflow-wrap:anywhere;
+
+    font-family:var(--font-body);
+
+    font-size:11px;
+
+    line-height:1.5;
+
+    letter-spacing:.04em;
+
+    color:#d8d2cf;
+
+}
+
+
+/* ==========================================
+   COPY BUTTON
+========================================== */
+
+.pix-copy-button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    margin-top:20px;
+
+    padding:12px 20px;
+
+    border:1px solid rgba(188,166,173,.6);
+
+    background:transparent;
+
+    font-family:var(--font-body);
+
+    font-size:9px;
+
+    font-weight:500;
+
+    letter-spacing:.18em;
+
+    color:#d8d2cf;
+
+    cursor:pointer;
+
+    transition:
+        background .3s ease,
+        color .3s ease;
+
+}
+
+
+.pix-copy-button:hover{
+
+    background:rgba(188,166,173,.08);
+
+}
+
+
+.pix-copy-button span:first-child,
+.pix-copy-button span:last-child{
+
+    font-size:7px;
+
+    color:#bca6ad;
+
+}
+
+
+/* ==========================================
+   BUNNY
+========================================== */
+
+.pix-modal-bunny{
+
+    display:block;
+
+    width:42px;
+
+    height:42px;
+
+    margin:26px auto 0;
+
+    object-fit:contain;
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:480px){
+
+    .pix-modal{
+
+        padding:20px;
+
+    }
+
+    .pix-modal-card{
+
+        max-width:340px;
+
+        padding:38px 22px 30px;
+
+    }
+
+}
+
+.chapter-gifts .gifts-button--pix {
+    appearance: none;
+    -webkit-appearance: none;
+
+    background: transparent;
+    color: #d8d2cf;
+
+    border: 1px solid rgba(188,166,173,.6);
+
+    font-family: var(--font-body);
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: .18em;
+
+    cursor: pointer;
+}
+
+.chapter-gifts .gifts-button--pix:hover {
+    background: rgba(188,166,173,.08);
+    color: #f1ece8;
+    border-color: #bca6ad;
+}
