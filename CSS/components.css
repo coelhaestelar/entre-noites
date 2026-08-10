@@ -1694,3 +1694,435 @@
     transform:rotate(45deg);
 
 }
+
+
+/* ==========================================
+   CHAPTER X
+   THE DRESS CODE
+========================================== */
+
+.chapter-dress-code{
+
+    background:#111111;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    box-sizing:border-box;
+
+    padding:0 8%;
+
+}
+
+
+.dress-code-content{
+
+    position:relative;
+
+    width:100%;
+
+    max-width:420px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    transform:translateY(-3vh);
+
+}
+
+
+/* ==========================================
+   EYEBROW
+========================================== */
+
+.dress-code-eyebrow{
+
+    font-family:var(--font-body);
+
+    font-size:10px;
+
+    font-weight:400;
+
+    letter-spacing:.28em;
+
+    color:#d8d2cf;
+
+}
+
+
+/* ==========================================
+   CHECKERBOARD
+========================================== */
+
+.dress-code-checker{
+
+    width:48px;
+
+    height:8px;
+
+    background:
+        linear-gradient(
+            45deg,
+            #bca6ad 25%,
+            transparent 25%,
+            transparent 75%,
+            #bca6ad 75%
+        ),
+        linear-gradient(
+            45deg,
+            #bca6ad 25%,
+            transparent 25%,
+            transparent 75%,
+            #bca6ad 75%
+        );
+
+    background-position:
+        0 0,
+        4px 4px;
+
+    background-size:8px 8px;
+
+    opacity:.45;
+
+}
+
+.dress-code-checker--top{
+
+    margin-top:28px;
+
+    align-self:center;
+
+}
+
+.dress-code-checker--bottom{
+
+    margin-top:34px;
+
+    align-self:center;
+
+    opacity:.3;
+
+}
+
+
+/* ==========================================
+   MAIN
+========================================== */
+
+.dress-code-main{
+
+    margin-top:18px;
+
+}
+
+.dress-code-title{
+
+    margin:0;
+
+    font-family:var(--font-title);
+
+    font-size:36px;
+
+    font-weight:400;
+
+    line-height:.95;
+
+    letter-spacing:.01em;
+
+    color:#f1ece8;
+
+}
+
+.dress-code-subtitle{
+
+    margin:16px 0 0;
+
+    font-family:var(--font-body);
+
+    font-size:12px;
+
+    font-weight:400;
+
+    letter-spacing:.08em;
+
+    color:#bca6ad;
+
+}
+
+
+/* ==========================================
+   PALETA
+========================================== */
+
+.dress-code-palette{
+
+    margin-top:54px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.dress-code-label{
+
+    font-family:var(--font-body);
+
+    font-size:10px;
+
+    font-weight:400;
+
+    letter-spacing:.25em;
+
+    color:#d8d2cf;
+
+}
+
+.dress-code-colors{
+
+    display:flex;
+
+    gap:8px;
+
+    margin-top:14px;
+
+}
+
+.dress-color{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    border:1px solid rgba(216,210,207,.25);
+
+}
+
+.dress-color--black{
+    background:#111111;
+}
+
+.dress-color--graphite{
+    background:#3a3a3a;
+}
+
+.dress-color--wine{
+    background:#5b2735;
+}
+
+.dress-color--pink{
+    background:#c8a4ae;
+}
+
+.dress-color--neutral{
+    background:#d8d0c8;
+}
+
+.dress-code-color-names{
+
+    margin-top:10px;
+
+    font-family:var(--font-body);
+
+    font-size:11px;
+
+    letter-spacing:.06em;
+
+    color:#8f8987;
+
+}
+
+
+/* ==========================================
+   EVITAR
+========================================== */
+
+.dress-code-notes{
+
+    margin-top:42px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.dress-code-notes p{
+
+    max-width:280px;
+
+    margin:12px 0 0;
+
+    font-family:var(--font-body);
+
+    font-size:10px;
+
+    line-height:1.7;
+
+    letter-spacing:.05em;
+
+    color:#aaa3a0;
+
+}
+
+
+/* ==========================================
+   DIVISOR
+========================================== */
+
+.dress-code-divider{
+
+    width:105px;
+
+    height:1px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    margin-top:42px;
+
+    opacity:.75;
+
+}
+
+.dress-code-divider span{
+
+    display:block;
+
+    width:42px;
+
+    height:1px;
+
+    background:rgba(188,166,173,.5);
+
+}
+
+.dress-code-divider i{
+
+    display:block;
+
+    flex:none;
+
+    width:5px;
+
+    height:5px;
+
+    background:#bca6ad;
+
+    transform:rotate(45deg);
+
+}
+
+.dress-code-reference-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    margin-top:28px;
+
+    padding:11px 16px;
+
+    border:1px solid rgba(188,166,173,.6);
+
+    font-family:var(--font-body);
+
+    font-size:9px;
+
+    font-weight:500;
+
+    letter-spacing:.18em;
+
+    text-decoration:none;
+
+    color:#d8d2cf;
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        border-color .3s ease;
+
+}
+
+.dress-code-reference-link span{
+
+    font-size:7px;
+
+    color:#bca6ad;
+
+}
+
+.dress-code-reference-link:hover{
+
+    background:rgba(188,166,173,.08);
+
+    border-color:#bca6ad;
+
+    color:#f1ece8;
+
+}
+
+.dress-code-previews{
+
+    display:grid;
+
+    grid-template-columns:repeat(3, 1fr);
+
+    gap:6px;
+
+    width:100%;
+
+    max-width:400px;
+
+    margin-top:28px;
+
+}
+
+.dress-preview{
+
+    aspect-ratio:3 / 4;
+
+    overflow:hidden;
+
+    border:1px solid rgba(188,166,173,.35);
+
+    background:#181616;
+
+}
+
+.dress-preview img{
+
+    width:100%;
+
+    height:100%;
+
+    display:block;
+
+    object-fit:cover;
+
+    filter:saturate(.75) contrast(.95);
+
+}
