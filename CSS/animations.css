@@ -229,7 +229,7 @@
 
     opacity: 0;
 
-    transform: translateY(8px);
+    transform: translateY(12px);
 
     transition:
         opacity 900ms cubic-bezier(.22, .61, .36, 1),
@@ -424,5 +424,97 @@
 
 .chapter-event.is-visible .reveal-3 {
     transition-delay: 540ms;
+}
+
+
+/* ==========================================
+   THE NIGHT SCHEDULE
+========================================== */
+
+.chapter-schedule .schedule-item,
+.chapter-schedule .schedule-divider {
+
+    opacity: 0;
+
+    transform: translateY(12px);
+
+    transition:
+        opacity 750ms cubic-bezier(.22, .61, .36, 1),
+        transform 750ms cubic-bezier(.22, .61, .36, 1);
+
+}
+
+
+/* ==========================================
+   ITEMS
+========================================== */
+
+.chapter-schedule.is-visible .schedule-reveal-1 {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 180ms;
+
+}
+
+
+.chapter-schedule.is-visible .schedule-reveal-2 {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 300ms;
+
+}
+
+
+.chapter-schedule.is-visible .schedule-reveal-3 {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 420ms;
+
+}
+
+
+.chapter-schedule.is-visible .schedule-reveal-4 {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 540ms;
+
+}
+
+
+.chapter-schedule.is-visible .schedule-reveal-5 {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 660ms;
+
+}
+
+
+/* ==========================================
+   FINAL DIVIDER
+========================================== */
+
+.chapter-schedule.is-visible .schedule-reveal-divider {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 820ms;
+
 }
 
