@@ -673,3 +673,95 @@
 .chapter-rsvp.is-visible .reveal-5 {
     transition-delay: 820ms;
 }
+
+
+/* ==========================================
+   THE GIFTS — REVEAL
+========================================== */
+
+.chapter-gifts .reveal {
+
+    opacity: 0;
+
+    transform: translateY(8px);
+
+    filter: none;
+
+    transition:
+        opacity 850ms cubic-bezier(.22, .61, .36, 1),
+        transform 850ms cubic-bezier(.22, .61, .36, 1);
+
+}
+
+
+.chapter-gifts.is-visible .reveal {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+
+/* ==========================================
+   THE GIFTS — OPTIONS
+========================================== */
+
+.chapter-gifts .gifts-reveal-list,
+.chapter-gifts .gifts-reveal-or,
+.chapter-gifts .gifts-reveal-pix,
+.chapter-gifts .gifts-reveal-divider {
+
+    opacity: 0;
+
+    transform: translateY(10px);
+
+    transition:
+        opacity 850ms cubic-bezier(.22, .61, .36, 1),
+        transform 850ms cubic-bezier(.22, .61, .36, 1);
+
+}
+
+
+.chapter-gifts.is-visible .gifts-reveal-list {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 360ms;
+
+}
+
+
+.chapter-gifts.is-visible .gifts-reveal-or {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 600ms;
+
+}
+
+
+.chapter-gifts.is-visible .gifts-reveal-pix {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 760ms;
+
+}
+
+
+.chapter-gifts.is-visible .gifts-reveal-divider {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 980ms;
+
+}
