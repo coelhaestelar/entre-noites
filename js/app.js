@@ -348,10 +348,12 @@ pixCopyButton.addEventListener("click", async () => {
         await navigator.clipboard.writeText(key);
 
         pixCopyText.textContent = "CHAVE COPIADA";
+        pixCopyButton.classList.add("copied");
 
         setTimeout(() => {
 
             pixCopyText.textContent = "COPIAR CHAVE";
+            pixCopyButton.classList.remove("copied");
 
         }, 2200);
 

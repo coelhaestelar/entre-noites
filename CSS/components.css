@@ -3784,3 +3784,341 @@
     transform:rotate(45deg);
 
 }
+
+
+/* ==========================================
+   PIX MODAL
+========================================== */
+
+.pix-modal {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 9999;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 24px;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transition:
+        opacity 350ms ease,
+        visibility 350ms ease;
+
+}
+
+
+/* MODAL ABERTO */
+
+.pix-modal.is-open {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    pointer-events: auto;
+
+}
+
+
+/* ==========================================
+   BACKDROP
+========================================== */
+
+.pix-modal-backdrop {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(17, 17, 17, 0.88);
+
+    backdrop-filter: blur(4px);
+
+    -webkit-backdrop-filter: blur(4px);
+
+}
+
+
+/* ==========================================
+   CONTEÚDO
+========================================== */
+
+.pix-modal-content {
+
+    position: relative;
+
+    z-index: 1;
+
+    width: min(100%, 420px);
+
+    padding: 48px 32px 40px;
+
+    background: #111111;
+
+    border: 1px solid rgba(205, 181, 190, 0.55);
+
+    text-align: center;
+
+    box-sizing: border-box;
+
+    transform: translateY(12px);
+
+    opacity: 0;
+
+    transition:
+        opacity 450ms cubic-bezier(.22, .61, .36, 1),
+        transform 450ms cubic-bezier(.22, .61, .36, 1);
+
+}
+
+
+.pix-modal.is-open .pix-modal-content {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+
+/* ==========================================
+   FECHAR
+========================================== */
+
+.pix-modal-close {
+
+    position: absolute;
+
+    top: 14px;
+
+    right: 16px;
+
+    width: 28px;
+
+    height: 28px;
+
+    padding: 0;
+
+    border: 0;
+
+    background: transparent;
+
+    color: #cdb5be;
+
+    font-family: inherit;
+
+    font-size: 18px;
+
+    font-weight: 300;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+}
+
+
+/* ==========================================
+   TEXTOS
+========================================== */
+
+.pix-modal-eyebrow {
+
+    display: block;
+
+    margin-bottom: 14px;
+
+    color: #cdb5be;
+
+    font-size: 10px;
+
+    letter-spacing: 0.28em;
+
+    text-transform: uppercase;
+
+}
+
+
+.pix-modal-title {
+
+    margin: 0;
+
+    color: #f0e8e5;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(30px, 7vw, 38px);
+
+    font-weight: 400;
+
+    line-height: 1.05;
+
+}
+
+
+.pix-modal-text {
+
+    max-width: 300px;
+
+    margin: 18px auto 24px;
+
+    color: #c9c0c2;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+}
+
+
+/* ==========================================
+   CHAVE
+========================================== */
+
+.pix-key-box {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 15px 16px;
+
+    border: 1px solid rgba(205, 181, 190, 0.45);
+
+    background: rgba(255, 255, 255, 0.025);
+
+    overflow: hidden;
+
+}
+
+
+.pix-key {
+
+    display: block;
+
+    color: #e6d9dd;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    line-height: 1.4;
+
+    overflow-wrap: anywhere;
+
+    word-break: break-word;
+
+}
+
+
+/* ==========================================
+   BOTÃO COPIAR
+========================================== */
+
+.pix-copy-button {
+
+    margin-top: 22px;
+
+    padding: 13px 24px;
+
+    border: 1px solid rgba(205, 181, 190, 0.65);
+
+    background: transparent;
+
+    color: #e6d9dd;
+
+    font-family: inherit;
+
+    font-size: 10px;
+
+    letter-spacing: 0.18em;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition:
+        background 250ms ease,
+        color 250ms ease;
+
+}
+
+
+.pix-copy-button:hover {
+
+    background: #cdb5be;
+
+    color: #111111;
+
+}
+
+
+.pix-copy-button {
+
+    color: #e6d9dd;
+
+}
+
+
+.pix-copy-button.copied {
+
+    background: #cdb5be;
+
+    color: #111111;
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+    .pix-modal {
+
+        padding: 20px;
+
+    }
+
+
+    .pix-modal-content {
+
+        padding: 44px 22px 32px;
+
+    }
+
+
+    .pix-modal-title {
+
+        font-size: 30px;
+
+    }
+
+
+    .pix-modal-text {
+
+        font-size: 12px;
+
+    }
+
+
+    .pix-key {
+
+        font-size: 12px;
+
+    }
+
+}

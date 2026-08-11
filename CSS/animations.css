@@ -765,3 +765,85 @@
     transition-delay: 980ms;
 
 }
+
+
+/* ==========================================
+   THE SIGNATURE — FINAL REVEAL
+========================================== */
+
+.chapter-signature .signature-reveal-seal,
+.chapter-signature .signature-reveal-names,
+.chapter-signature .signature-reveal-date,
+.chapter-signature .signature-reveal-divider {
+
+    opacity: 0;
+
+    transform: translateY(8px);
+
+    transition:
+        opacity 1200ms cubic-bezier(.22, .61, .36, 1),
+        transform 1200ms cubic-bezier(.22, .61, .36, 1);
+
+}
+
+
+/* ==========================================
+   SEAL
+========================================== */
+
+.chapter-signature.is-visible .signature-reveal-seal {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 180ms;
+
+}
+
+
+/* ==========================================
+   NAMES
+========================================== */
+
+.chapter-signature.is-visible .signature-reveal-names {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 720ms;
+
+}
+
+
+/* ==========================================
+   DATE
+========================================== */
+
+.chapter-signature.is-visible .signature-reveal-date {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 980ms;
+
+}
+
+
+/* ==========================================
+   FINAL DIVIDER
+========================================== */
+
+.chapter-signature.is-visible .signature-reveal-divider {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition-delay: 1250ms;
+
+}
+
+
