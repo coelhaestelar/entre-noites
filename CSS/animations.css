@@ -226,21 +226,24 @@
 ========================================== */
 
 .reveal {
+
     opacity: 0;
-    transform: translateY(10px);
-    filter: blur(4px);
+
+    transform: translateY(8px);
 
     transition:
-        opacity 1000ms cubic-bezier(.22, .61, .36, 1),
-        transform 1000ms cubic-bezier(.22, .61, .36, 1),
-        filter 1000ms cubic-bezier(.22, .61, .36, 1);
+        opacity 900ms cubic-bezier(.22, .61, .36, 1),
+        transform 900ms cubic-bezier(.22, .61, .36, 1);
+
 }
 
 
 .chapter.is-visible .reveal {
+
     opacity: 1;
+
     transform: translateY(0);
-    filter: blur(0);
+
 }
 
 
@@ -258,6 +261,10 @@
 
 .chapter.is-visible .reveal-3 {
     transition-delay: 420ms;
+}
+
+.chapter.is-visible .reveal-4 {
+    transition-delay: 650ms;
 }
 
 
@@ -323,3 +330,99 @@
 .chapter-night.is-visible .reveal-4 {
     transition-delay: 500ms;
 }
+
+
+/* ==========================================
+   THE PLACE — REVEAL
+========================================== */
+
+.chapter-place .reveal {
+
+    opacity: 0;
+
+    transform: translateY(8px);
+
+    filter: none;
+
+    transition:
+        opacity 900ms cubic-bezier(.22, .61, .36, 1),
+        transform 900ms cubic-bezier(.22, .61, .36, 1);
+
+}
+
+
+.chapter-place.is-visible .reveal {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+
+/* ==========================================
+   THE PLACE — STAGGER
+========================================== */
+
+.chapter-place.is-visible .reveal-1 {
+    transition-delay: 100ms;
+}
+
+.chapter-place.is-visible .reveal-2 {
+    transition-delay: 260ms;
+}
+
+.chapter-place.is-visible .reveal-3 {
+    transition-delay: 480ms;
+}
+
+.chapter-place.is-visible .reveal-4 {
+    transition-delay: 650ms;
+}
+
+
+
+/* ==========================================
+   THE EVENT — REVEAL
+========================================== */
+
+.chapter-event .reveal {
+
+    opacity: 0;
+
+    transform: translateY(8px);
+
+    filter: none;
+
+    transition:
+        opacity 900ms cubic-bezier(.22, .61, .36, 1),
+        transform 900ms cubic-bezier(.22, .61, .36, 1);
+
+}
+
+
+.chapter-event.is-visible .reveal {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+
+/* ==========================================
+   THE EVENT — STAGGER
+========================================== */
+
+.chapter-event.is-visible .reveal-1 {
+    transition-delay: 100ms;
+}
+
+.chapter-event.is-visible .reveal-2 {
+    transition-delay: 320ms;
+}
+
+.chapter-event.is-visible .reveal-3 {
+    transition-delay: 540ms;
+}
+
