@@ -386,8 +386,6 @@
 
     line-height:1;
 
-    font-style:regular;
-
 }
 
 .hero-date{
@@ -573,30 +571,8 @@
 }
 
 /* ==========================================
-   CHAPTER VI — ENTRANCE
-========================================== */
-
-.chapter-night .night-content{
-
-    opacity:0;
-
-    transform:translateY(10px);
-
-    transition:
-        opacity 1.8s ease,
-        transform 2s cubic-bezier(.16, 1, .3, 1);
-
-}
-
-.chapter-night.is-visible .night-content{
-
-    opacity:1;
-
-    transform:translateY(0);
-
-    transition-delay:.35s;
-
-}
+ CHAPTER VI — ENTRANCE
+ ========================================== */
 
 .chapter-hero{
 
@@ -1643,12 +1619,6 @@
 
 .schedule-divider{
 
-    position:relative;
-
-    left:50%;
-
-    transform:translateX(-50%);
-
     width:105px;
 
     height:1px;
@@ -1660,6 +1630,8 @@
     justify-content:center;
 
     gap:8px;
+
+    align-self:center;
 
     margin-top:72px;
 
@@ -2128,7 +2100,7 @@
 }
 
 /* ==========================================
-   RSVP
+   CHAPTER XI - THE RSVP
 ========================================== */
 
 .chapter-rsvp{
@@ -2335,7 +2307,7 @@
 
 
 /* ==========================================
-   CHAPTER XI
+   CHAPTER XII
    THE GIFTS
 ========================================== */
 
@@ -2355,7 +2327,6 @@
 
 }
 
-
 .gifts-content{
 
     position:relative;
@@ -2373,512 +2344,6 @@
     text-align:center;
 
     transform:translateY(-3vh);
-
-}
-
-/* ==========================================
-   GIFTS — TITLE ORNAMENT
-========================================== */
-
-.gifts-top-divider{
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    gap:8px;
-
-    width:105px;
-
-    margin-top:24px;
-
-}
-
-.gifts-top-divider span{
-
-    width:34px;
-
-    height:1px;
-
-    background:rgba(188,166,173,.5);
-
-}
-
-.gifts-top-divider i{
-
-    width:6px;
-
-    height:6px;
-
-    flex:none;
-
-    background:#bca6ad;
-
-    transform:rotate(45deg);
-
-}
-
-
-/* ==========================================
-   GIFTS — OPTIONS
-========================================== */
-
-.gifts-option{
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
-
-    text-align:center;
-
-}
-
-
-/* ==========================================
-   GIFTS — ICONS
-========================================== */
-
-.gifts-icon-wrap{
-
-    width:72px;
-    height:72px;
-
-    display:flex;
-
-    align-items:center;
-    justify-content:center;
-
-    margin-top:42px;
-
-}
-
-.gifts-icon-image {
-    width: 72px;
-    height: 72px;
-    display: block;
-    object-fit: contain;
-}
-
-
-/* ==========================================
-   GIFTS — OPTION TITLE
-========================================== */
-
-.gifts-option-title{
-
-    margin-top:14px;
-
-    font-family:var(--font-body);
-
-    font-size:11px;
-
-    font-weight:400;
-
-    letter-spacing:.12em;
-
-    color:#d8d2cf;
-
-}
-
-
-/* ==========================================
-   GIFTS — BUTTONS
-========================================== */
-
-.gifts-option .gifts-button{
-
-    margin-top:20px;
-
-}
-
-
-/* ==========================================
-   GIFTS — OR
-========================================== */
-
-.gifts-or{
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    gap:10px;
-
-    width:120px;
-
-    margin-top:58px;
-
-    margin-bottom:18px;
-
-}
-
-
-.gifts-or span{
-
-    width:30px;
-
-    height:1px;
-
-    background:rgba(188,166,173,.45);
-
-}
-
-
-.gifts-or i{
-
-    font-family:var(--font-title);
-
-    font-size:14px;
-
-    font-style:italic;
-
-    letter-spacing:.04em;
-
-    color:#bca6ad;
-
-}
-
-
-/* ==========================================
-   GIFTS — PIX
-========================================== */
-
-.gifts-option--pix .gifts-icon-wrap{
-
-    margin-top:5px;
-
-}
-
-
-.gifts-option--pix .gifts-option-title{
-
-    text-transform:none;
-
-}
-
-
-.gifts-option--pix .gifts-button{
-
-    margin-top:18px;
-
-}
-
-
-/* ==========================================
-   GIFTS — FINAL DIVIDER
-========================================== */
-
-.gifts-divider{
-
-    width:105px;
-
-    height:1px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    gap:8px;
-
-    margin-top:70px;
-
-    opacity:.75;
-
-}
-
-
-.gifts-divider span{
-
-    display:block;
-
-    width:42px;
-
-    height:1px;
-
-    background:rgba(188,166,173,.5);
-
-}
-
-
-.gifts-divider i{
-
-    display:block;
-
-    flex:none;
-
-    width:5px;
-
-    height:5px;
-
-    background:#bca6ad;
-
-    transform:rotate(45deg);
-
-}/* ==========================================
-   GIFTS — TITLE ORNAMENT
-========================================== */
-
-.gifts-top-divider{
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    gap:8px;
-
-    width:105px;
-
-    margin-top:24px;
-
-}
-
-.gifts-top-divider span{
-
-    width:34px;
-
-    height:1px;
-
-    background:rgba(188,166,173,.5);
-
-}
-
-.gifts-top-divider i{
-
-    width:6px;
-
-    height:6px;
-
-    flex:none;
-
-    background:#bca6ad;
-
-    transform:rotate(45deg);
-
-}
-
-
-/* ==========================================
-   GIFTS — OPTIONS
-========================================== */
-
-.gifts-option{
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
-
-    text-align:center;
-
-}
-
-
-/* ==========================================
-   GIFTS — ICONS
-========================================== */
-
-.gifts-icon-wrap{
-
-    width:58px;
-
-    height:58px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    margin-top:42px;
-
-}
-
-
-.gifts-icon{
-
-    width:48px;
-
-    height:48px;
-
-    fill:none;
-
-    stroke:#c9b3ba;
-
-    stroke-width:1.15;
-
-    stroke-linecap:round;
-
-    stroke-linejoin:round;
-
-}
-
-
-/* ==========================================
-   GIFTS — OPTION TITLE
-========================================== */
-
-.gifts-option-title{
-
-    margin-top:14px;
-
-    font-family:var(--font-body);
-
-    font-size:11px;
-
-    font-weight:400;
-
-    letter-spacing:.12em;
-
-    color:#d8d2cf;
-
-}
-
-
-/* ==========================================
-   GIFTS — BUTTONS
-========================================== */
-
-.gifts-option .gifts-button{
-
-    margin-top:20px;
-
-}
-
-
-/* ==========================================
-   GIFTS — OR
-========================================== */
-
-.gifts-or{
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    gap:10px;
-
-    width:120px;
-
-    margin-top:42px;
-
-}
-
-
-.gifts-or span{
-
-    width:30px;
-
-    height:1px;
-
-    background:rgba(188,166,173,.45);
-
-}
-
-
-.gifts-or i{
-
-    font-family:var(--font-title);
-
-    font-size:14px;
-
-    font-style:italic;
-
-    letter-spacing:.04em;
-
-    color:#bca6ad;
-
-}
-
-
-/* ==========================================
-   GIFTS — PIX
-========================================== */
-
-.gifts-option--pix .gifts-icon-wrap{
-
-    margin-top:34px;
-
-}
-
-
-.gifts-option--pix .gifts-option-title{
-
-    text-transform:none;
-
-}
-
-
-.gifts-option--pix .gifts-button{
-
-    margin-top:18px;
-
-}
-
-
-/* ==========================================
-   GIFTS — FINAL DIVIDER
-========================================== */
-
-.gifts-divider{
-
-    width:105px;
-
-    height:1px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    gap:8px;
-
-    margin-top:70px;
-
-    opacity:.75;
-
-}
-
-
-.gifts-divider span{
-
-    display:block;
-
-    width:42px;
-
-    height:1px;
-
-    background:rgba(188,166,173,.5);
-
-}
-
-
-.gifts-divider i{
-
-    display:block;
-
-    flex:none;
-
-    width:5px;
-
-    height:5px;
-
-    background:#bca6ad;
-
-    transform:rotate(45deg);
 
 }
 
@@ -2907,6 +2372,122 @@
 
 
 /* ==========================================
+   TITLE ORNAMENT
+========================================== */
+
+.gifts-top-divider{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    width:105px;
+
+    margin-top:24px;
+
+}
+
+.gifts-top-divider span{
+
+    width:34px;
+
+    height:1px;
+
+    background:rgba(188,166,173,.5);
+
+}
+
+.gifts-top-divider i{
+
+    width:6px;
+
+    height:6px;
+
+    flex:none;
+
+    background:#bca6ad;
+
+    transform:rotate(45deg);
+
+}
+
+
+/* ==========================================
+   GIFT OPTIONS
+========================================== */
+
+.gifts-option{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+
+/* ==========================================
+   ICONS
+========================================== */
+
+.gifts-icon-wrap{
+
+    width:72px;
+
+    height:72px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-top:28px;
+
+}
+
+.gifts-icon-image{
+
+    width:64px;
+
+    height:64px;
+
+    display:block;
+
+    object-fit:contain;
+
+}
+
+
+/* ==========================================
+   OPTION TITLE
+========================================== */
+
+.gifts-option-title{
+
+    margin-top:12px;
+
+    font-family:var(--font-body);
+
+    font-size:11px;
+
+    font-weight:400;
+
+    letter-spacing:.08em;
+
+    color:#d8d2cf;
+
+}
+
+
+/* ==========================================
    BUTTONS
 ========================================== */
 
@@ -2925,6 +2506,8 @@
     padding:13px 22px;
 
     border:1px solid rgba(188,166,173,.6);
+
+    background:transparent;
 
     font-family:var(--font-body);
 
@@ -2965,6 +2548,29 @@
 
 
 /* ==========================================
+   LIST OF GIFTS
+========================================== */
+
+.chapter-gifts .gifts-option--list .gifts-icon-wrap{
+
+    margin-top:28px;
+
+}
+
+.chapter-gifts .gifts-option--list .gifts-option-title{
+
+    margin-top:12px;
+
+}
+
+.chapter-gifts .gifts-option--list .gifts-button{
+
+    margin-top:18px;
+
+}
+
+
+/* ==========================================
    OR
 ========================================== */
 
@@ -2980,7 +2586,9 @@
 
     width:120px;
 
-    margin-top:38px;
+    margin-top:46px;
+
+    margin-bottom:0;
 
 }
 
@@ -3013,31 +2621,29 @@
    PIX
 ========================================== */
 
-.gifts-pix-label{
+.chapter-gifts .gifts-option--pix .gifts-icon-wrap{
 
-    margin-top:15px;
-
-    font-family:var(--font-body);
-
-    font-size:13px;
-
-    font-weight:400;
-
-    letter-spacing:.08em;
-
-    color:#d8d2cf;
+    margin-top:28px;
 
 }
 
-.gifts-button--pix{
+.chapter-gifts .gifts-option--pix .gifts-option-title{
 
-    margin-top:8px;
+    margin-top:12px;
+
+    text-transform:none;
+
+}
+
+.chapter-gifts .gifts-option--pix .gifts-button{
+
+    margin-top:18px;
 
 }
 
 
 /* ==========================================
-   DIVIDER
+   FINAL DIVIDER
 ========================================== */
 
 .gifts-divider{
@@ -3054,7 +2660,7 @@
 
     gap:8px;
 
-    margin-top:72px;
+    margin-top:64px;
 
     opacity:.75;
 
@@ -3086,199 +2692,6 @@
 
     transform:rotate(45deg);
 
-}
-
-
-/* ==========================================
-   GIFT OPTIONS
-========================================== */
-
-.gifts-option{
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
-
-    text-align:center;
-
-}
-
-.gifts-icon{
-
-    width:28px;
-
-    height:28px;
-
-    fill:none;
-
-    stroke:#bca6ad;
-
-    stroke-width:1.15;
-
-    stroke-linecap:round;
-
-    stroke-linejoin:round;
-
-}
-
-
-.gifts-option-title{
-
-    margin-top:50px;
-
-    font-family:var(--font-body);
-
-    font-size:11px;
-
-    font-weight:400;
-
-    letter-spacing:.08em;
-
-    color:#d8d2cf;
-
-}
-
-
-/* ==========================================
-   BUTTONS
-========================================== */
-
-.gifts-option .gifts-button{
-
-    margin-top:52px;
-
-}
-
-
-/* ==========================================
-   SPACING
-========================================== */
-
-.gifts-or{
-
-    margin-top:20px;
-
-    margin-bottom:40px;
-
-}
-
-/* ==========================================
-   GIFTS — FINAL OVERRIDES
-========================================== */
-
-.chapter-gifts .gifts-icon-wrap {
-    width: 82px;
-    height: 82px;
-    margin-top: 52px;
-}
-
-.chapter-gifts .gifts-icon {
-    width: 82px !important;
-    height: 82px !important;
-}
-
-
-/* espaço entre a primeira opção e o "ou" */
-.chapter-gifts .gifts-or {
-    margin-top: 70px;
-    margin-bottom: 20px;
-}
-
-
-/* aproxima o PIX do "ou" */
-.chapter-gifts .gifts-option--pix .gifts-icon-wrap {
-    margin-top: 15px;
-}
-
-
-/* ==========================================
-   GIFTS — SPACING RESET
-========================================== */
-
-.chapter-gifts .gifts-content {
-    transform: translateY(-3vh);
-}
-
-
-/* título → ornamento */
-
-.chapter-gifts .gifts-top-divider {
-    margin-top: 24px;
-}
-
-
-/* ==========================================
-   PRIMEIRA OPÇÃO
-========================================== */
-
-.chapter-gifts .gifts-option--list .gifts-icon-wrap {
-    width: 72px;
-    height: 72px;
-    margin-top: 28px;
-}
-
-
-.chapter-gifts .gifts-option--list .gifts-icon-image {
-    width: 64px;
-    height: 64px;
-}
-
-
-.chapter-gifts .gifts-option--list .gifts-option-title {
-    margin-top: 12px;
-}
-
-
-.chapter-gifts .gifts-option--list .gifts-button {
-    margin-top: 18px;
-}
-
-
-/* ==========================================
-   OU
-========================================== */
-
-.chapter-gifts .gifts-or {
-    margin-top: 46px;
-    margin-bottom: 0;
-}
-
-
-/* ==========================================
-   SEGUNDA OPÇÃO — PIX
-========================================== */
-
-.chapter-gifts .gifts-option--pix .gifts-icon-wrap {
-    width: 72px;
-    height: 72px;
-    margin-top: 28px;
-}
-
-
-.chapter-gifts .gifts-option--pix .gifts-icon-image {
-    width: 64px;
-    height: 64px;
-}
-
-
-.chapter-gifts .gifts-option--pix .gifts-option-title {
-    margin-top: 12px;
-}
-
-
-.chapter-gifts .gifts-option--pix .gifts-button {
-    margin-top: 18px;
-}
-
-
-/* ==========================================
-   DIVISOR FINAL
-========================================== */
-
-.chapter-gifts .gifts-divider {
-    margin-top: 64px;
 }
 
 
@@ -3316,7 +2729,6 @@
 
 }
 
-
 .pix-modal.is-open{
 
     visibility:visible;
@@ -3329,7 +2741,7 @@
 
 
 /* ==========================================
-   OVERLAY
+   PIX MODAL — OVERLAY
 ========================================== */
 
 .pix-modal-overlay{
@@ -3346,7 +2758,7 @@
 
 
 /* ==========================================
-   CARD
+   PIX MODAL — CARD
 ========================================== */
 
 .pix-modal-card{
@@ -3375,7 +2787,6 @@
 
 }
 
-
 .pix-modal.is-open .pix-modal-card{
 
     transform:translateY(0);
@@ -3384,7 +2795,7 @@
 
 
 /* ==========================================
-   CLOSE
+   PIX MODAL — CLOSE
 ========================================== */
 
 .pix-modal-close{
@@ -3421,7 +2832,7 @@
 
 
 /* ==========================================
-   TEXT
+   PIX MODAL — TEXT
 ========================================== */
 
 .pix-modal-eyebrow{
@@ -3437,7 +2848,6 @@
     color:#bca6ad;
 
 }
-
 
 .pix-modal-title{
 
@@ -3457,7 +2867,7 @@
 
 
 /* ==========================================
-   PIX KEY
+   PIX MODAL — KEY
 ========================================== */
 
 .pix-key-box{
@@ -3473,7 +2883,6 @@
     background:rgba(188,166,173,.035);
 
 }
-
 
 .pix-key{
 
@@ -3495,7 +2904,7 @@
 
 
 /* ==========================================
-   COPY BUTTON
+   PIX MODAL — COPY BUTTON
 ========================================== */
 
 .pix-copy-button{
@@ -3518,7 +2927,7 @@
 
     font-family:var(--font-body);
 
-    font-size:9px;
+    font-size:10px;
 
     font-weight:500;
 
@@ -3534,18 +2943,16 @@
 
 }
 
-
 .pix-copy-button:hover{
 
     background:rgba(188,166,173,.08);
 
 }
 
-
 .pix-copy-button span:first-child,
 .pix-copy-button span:last-child{
 
-    font-size:7px;
+    font-size:9px;
 
     color:#bca6ad;
 
@@ -3553,7 +2960,7 @@
 
 
 /* ==========================================
-   BUNNY
+   PIX MODAL — BUNNY
 ========================================== */
 
 .pix-modal-bunny{
@@ -3567,6 +2974,45 @@
     margin:26px auto 0;
 
     object-fit:contain;
+
+}
+
+
+/* ==========================================
+   PIX BUTTON
+========================================== */
+
+.chapter-gifts .gifts-button--pix{
+
+    appearance:none;
+
+    -webkit-appearance:none;
+
+    background:transparent;
+
+    color:#d8d2cf;
+
+    border:1px solid rgba(188,166,173,.6);
+
+    font-family:var(--font-body);
+
+    font-size:10px;
+
+    font-weight:500;
+
+    letter-spacing:.18em;
+
+    cursor:pointer;
+
+}
+
+.chapter-gifts .gifts-button--pix:hover{
+
+    background:rgba(188,166,173,.08);
+
+    color:#f1ece8;
+
+    border-color:#bca6ad;
 
 }
 
@@ -3593,27 +3039,323 @@
 
 }
 
-.chapter-gifts .gifts-button--pix {
-    appearance: none;
-    -webkit-appearance: none;
+/* ==========================================
+   PIX MODAL
+========================================== */
 
-    background: transparent;
-    color: #d8d2cf;
+.pix-modal{
 
-    border: 1px solid rgba(188,166,173,.6);
+    position:fixed;
 
-    font-family: var(--font-body);
-    font-size: 9px;
-    font-weight: 500;
-    letter-spacing: .18em;
+    inset:0;
 
-    cursor: pointer;
+    z-index:9999;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:24px;
+
+    box-sizing:border-box;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    pointer-events:none;
+
+    transition:
+        opacity 350ms ease,
+        visibility 350ms ease;
+
 }
 
-.chapter-gifts .gifts-button--pix:hover {
-    background: rgba(188,166,173,.08);
-    color: #f1ece8;
-    border-color: #bca6ad;
+.pix-modal.is-open{
+
+    opacity:1;
+
+    visibility:visible;
+
+    pointer-events:auto;
+
+}
+
+
+/* ==========================================
+   PIX MODAL — BACKDROP
+========================================== */
+
+.pix-modal-backdrop{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(17,17,17,.88);
+
+    backdrop-filter:blur(4px);
+
+    -webkit-backdrop-filter:blur(4px);
+
+}
+
+
+/* ==========================================
+   PIX MODAL — CONTENT
+========================================== */
+
+.pix-modal-content{
+
+    position:relative;
+
+    z-index:1;
+
+    width:min(100%,420px);
+
+    padding:48px 32px 40px;
+
+    background:#111111;
+
+    border:1px solid rgba(205,181,190,.55);
+
+    text-align:center;
+
+    box-sizing:border-box;
+
+    transform:translateY(12px);
+
+    opacity:0;
+
+    transition:
+        opacity 450ms cubic-bezier(.22,.61,.36,1),
+        transform 450ms cubic-bezier(.22,.61,.36,1);
+
+}
+
+.pix-modal.is-open .pix-modal-content{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+/* ==========================================
+   PIX MODAL — CLOSE
+========================================== */
+
+.pix-modal-close{
+
+    position:absolute;
+
+    top:14px;
+
+    right:16px;
+
+    width:28px;
+
+    height:28px;
+
+    padding:0;
+
+    border:0;
+
+    background:transparent;
+
+    color:#cdb5be;
+
+    font-family:inherit;
+
+    font-size:18px;
+
+    font-weight:300;
+
+    line-height:1;
+
+    cursor:pointer;
+
+}
+
+
+/* ==========================================
+   PIX MODAL — TEXT
+========================================== */
+
+.pix-modal-eyebrow{
+
+    display:block;
+
+    margin-bottom:14px;
+
+    color:#cdb5be;
+
+    font-size:10px;
+
+    letter-spacing:.28em;
+
+    text-transform:uppercase;
+
+}
+
+.pix-modal-title{
+
+    margin:0;
+
+    color:#f0e8e5;
+
+    font-family:Georgia,"Times New Roman",serif;
+
+    font-size:clamp(30px,7vw,38px);
+
+    font-weight:400;
+
+    line-height:1.05;
+
+}
+
+.pix-modal-text{
+
+    max-width:300px;
+
+    margin:18px auto 24px;
+
+    color:#c9c0c2;
+
+    font-size:13px;
+
+    line-height:1.6;
+
+}
+
+
+/* ==========================================
+   PIX MODAL — KEY
+========================================== */
+
+.pix-key-box{
+
+    width:100%;
+
+    box-sizing:border-box;
+
+    padding:15px 16px;
+
+    border:1px solid rgba(205,181,190,.45);
+
+    background:rgba(255,255,255,.025);
+
+    overflow:hidden;
+
+}
+
+.pix-key{
+
+    display:block;
+
+    color:#e6d9dd;
+
+    font-family:inherit;
+
+    font-size:13px;
+
+    line-height:1.4;
+
+    overflow-wrap:anywhere;
+
+    word-break:break-word;
+
+}
+
+
+/* ==========================================
+   PIX MODAL — COPY
+========================================== */
+
+.pix-copy-button{
+
+    margin-top:22px;
+
+    padding:13px 24px;
+
+    border:1px solid rgba(205,181,190,.65);
+
+    background:transparent;
+
+    color:#e6d9dd;
+
+    font-family:inherit;
+
+    font-size:10px;
+
+    letter-spacing:.18em;
+
+    text-transform:uppercase;
+
+    cursor:pointer;
+
+    transition:
+        background 250ms ease,
+        color 250ms ease;
+
+}
+
+.pix-copy-button:hover{
+
+    background:#cdb5be;
+
+    color:#111111;
+
+}
+
+.pix-copy-button.copied{
+
+    background:#cdb5be;
+
+    color:#111111;
+
+}
+
+
+/* ==========================================
+   PIX MODAL — MOBILE
+========================================== */
+
+@media (max-width:480px){
+
+    .pix-modal{
+
+        padding:20px;
+
+    }
+
+    .pix-modal-content{
+
+        padding:44px 22px 32px;
+
+    }
+
+    .pix-modal-title{
+
+        font-size:30px;
+
+    }
+
+    .pix-modal-text{
+
+        font-size:12px;
+
+    }
+
+    .pix-key{
+
+        font-size:12px;
+
+    }
+
 }
 
 
@@ -3786,339 +3528,3 @@
 }
 
 
-/* ==========================================
-   PIX MODAL
-========================================== */
-
-.pix-modal {
-
-    position: fixed;
-
-    inset: 0;
-
-    z-index: 9999;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    padding: 24px;
-
-    opacity: 0;
-
-    visibility: hidden;
-
-    pointer-events: none;
-
-    transition:
-        opacity 350ms ease,
-        visibility 350ms ease;
-
-}
-
-
-/* MODAL ABERTO */
-
-.pix-modal.is-open {
-
-    opacity: 1;
-
-    visibility: visible;
-
-    pointer-events: auto;
-
-}
-
-
-/* ==========================================
-   BACKDROP
-========================================== */
-
-.pix-modal-backdrop {
-
-    position: absolute;
-
-    inset: 0;
-
-    background: rgba(17, 17, 17, 0.88);
-
-    backdrop-filter: blur(4px);
-
-    -webkit-backdrop-filter: blur(4px);
-
-}
-
-
-/* ==========================================
-   CONTEÚDO
-========================================== */
-
-.pix-modal-content {
-
-    position: relative;
-
-    z-index: 1;
-
-    width: min(100%, 420px);
-
-    padding: 48px 32px 40px;
-
-    background: #111111;
-
-    border: 1px solid rgba(205, 181, 190, 0.55);
-
-    text-align: center;
-
-    box-sizing: border-box;
-
-    transform: translateY(12px);
-
-    opacity: 0;
-
-    transition:
-        opacity 450ms cubic-bezier(.22, .61, .36, 1),
-        transform 450ms cubic-bezier(.22, .61, .36, 1);
-
-}
-
-
-.pix-modal.is-open .pix-modal-content {
-
-    opacity: 1;
-
-    transform: translateY(0);
-
-}
-
-
-/* ==========================================
-   FECHAR
-========================================== */
-
-.pix-modal-close {
-
-    position: absolute;
-
-    top: 14px;
-
-    right: 16px;
-
-    width: 28px;
-
-    height: 28px;
-
-    padding: 0;
-
-    border: 0;
-
-    background: transparent;
-
-    color: #cdb5be;
-
-    font-family: inherit;
-
-    font-size: 18px;
-
-    font-weight: 300;
-
-    line-height: 1;
-
-    cursor: pointer;
-
-}
-
-
-/* ==========================================
-   TEXTOS
-========================================== */
-
-.pix-modal-eyebrow {
-
-    display: block;
-
-    margin-bottom: 14px;
-
-    color: #cdb5be;
-
-    font-size: 10px;
-
-    letter-spacing: 0.28em;
-
-    text-transform: uppercase;
-
-}
-
-
-.pix-modal-title {
-
-    margin: 0;
-
-    color: #f0e8e5;
-
-    font-family: Georgia, "Times New Roman", serif;
-
-    font-size: clamp(30px, 7vw, 38px);
-
-    font-weight: 400;
-
-    line-height: 1.05;
-
-}
-
-
-.pix-modal-text {
-
-    max-width: 300px;
-
-    margin: 18px auto 24px;
-
-    color: #c9c0c2;
-
-    font-size: 13px;
-
-    line-height: 1.6;
-
-}
-
-
-/* ==========================================
-   CHAVE
-========================================== */
-
-.pix-key-box {
-
-    width: 100%;
-
-    box-sizing: border-box;
-
-    padding: 15px 16px;
-
-    border: 1px solid rgba(205, 181, 190, 0.45);
-
-    background: rgba(255, 255, 255, 0.025);
-
-    overflow: hidden;
-
-}
-
-
-.pix-key {
-
-    display: block;
-
-    color: #e6d9dd;
-
-    font-family: inherit;
-
-    font-size: 13px;
-
-    line-height: 1.4;
-
-    overflow-wrap: anywhere;
-
-    word-break: break-word;
-
-}
-
-
-/* ==========================================
-   BOTÃO COPIAR
-========================================== */
-
-.pix-copy-button {
-
-    margin-top: 22px;
-
-    padding: 13px 24px;
-
-    border: 1px solid rgba(205, 181, 190, 0.65);
-
-    background: transparent;
-
-    color: #e6d9dd;
-
-    font-family: inherit;
-
-    font-size: 10px;
-
-    letter-spacing: 0.18em;
-
-    text-transform: uppercase;
-
-    cursor: pointer;
-
-    transition:
-        background 250ms ease,
-        color 250ms ease;
-
-}
-
-
-.pix-copy-button:hover {
-
-    background: #cdb5be;
-
-    color: #111111;
-
-}
-
-
-.pix-copy-button {
-
-    color: #e6d9dd;
-
-}
-
-
-.pix-copy-button.copied {
-
-    background: #cdb5be;
-
-    color: #111111;
-
-}
-
-
-/* ==========================================
-   MOBILE
-========================================== */
-
-@media (max-width: 480px) {
-
-    .pix-modal {
-
-        padding: 20px;
-
-    }
-
-
-    .pix-modal-content {
-
-        padding: 44px 22px 32px;
-
-    }
-
-
-    .pix-modal-title {
-
-        font-size: 30px;
-
-    }
-
-
-    .pix-modal-text {
-
-        font-size: 12px;
-
-    }
-
-
-    .pix-key {
-
-        font-size: 12px;
-
-    }
-
-}

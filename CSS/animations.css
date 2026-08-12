@@ -216,7 +216,6 @@
     opacity:1;
 
     transform:translateY(0);
-
     transition-delay:3s;
 
 }
@@ -328,7 +327,7 @@
 }
 
 .chapter-night.is-visible .reveal-4 {
-    transition-delay: 500ms;
+    transition-delay: 620ms;
 }
 
 
