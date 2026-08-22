@@ -144,6 +144,40 @@ function disableAutomaticNavigation(){
 }
 
 /* ==========================================
+   INTERACTIVE ELEMENTS
+========================================== */
+
+const interactiveElements = document.querySelectorAll(
+    "a, button"
+);
+
+interactiveElements.forEach((element) => {
+
+    element.addEventListener(
+        "pointerdown",
+        () => {
+
+            disableAutomaticNavigation();
+
+        },
+        { passive:true }
+    );
+
+});
+
+
+/* ==========================================
+   INTERACTION SAFETY
+========================================== */
+
+invitation.addEventListener("pointerdown", () => {
+
+    disableAutomaticNavigation();
+
+}, { passive:true });
+
+
+/* ==========================================
    CHAPTER VISIBILITY
 ========================================== */
 

@@ -711,9 +711,11 @@
 .chapter-gifts .gifts-reveal-pix,
 .chapter-gifts .gifts-reveal-divider {
 
-    opacity: 0;
+    opacity:0;
 
-    transform: translateY(10px);
+    transform:translateY(10px);
+
+    pointer-events:none;
 
     transition:
         opacity 850ms cubic-bezier(.22, .61, .36, 1),
@@ -728,6 +730,8 @@
 
     transform: translateY(0);
 
+    pointer-events:auto;
+
     transition-delay: 360ms;
 
 }
@@ -738,6 +742,8 @@
     opacity: 1;
 
     transform: translateY(0);
+
+    pointer-events:auto;
 
     transition-delay: 600ms;
 
@@ -750,6 +756,8 @@
 
     transform: translateY(0);
 
+    pointer-events:auto;
+
     transition-delay: 760ms;
 
 }
@@ -760,6 +768,8 @@
     opacity: 1;
 
     transform: translateY(0);
+
+    pointer-events:auto;
 
     transition-delay: 980ms;
 

@@ -2493,6 +2493,10 @@
 
 .gifts-button{
 
+    position:relative;
+
+    z-index:2;
+
     display:inline-flex;
 
     align-items:center;
@@ -2520,6 +2524,10 @@
     text-decoration:none;
 
     color:#d8d2cf;
+
+    cursor:pointer;
+
+    touch-action:manipulation;
 
     transition:
         background .3s ease,
